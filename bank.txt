@@ -1,0 +1,228 @@
+	 	 	TOPIC-ONLINE BANKING SYSTEM 
+	 	         Domain- Banking 
+ 
+Problem Statement  
+ 
+Online banking system is specifically developed for internet banking for balance enquiry, funds transfer to another account, change of profile information and account statement. The traditional way of maintaining details of a user in a bank was to enter the details and record them. Every time the user needs to perform some transaction they have to go to bank and perform the necessary actions, which may not be so feasible all the time. Here, we provide an automation for banking system through Internet.  The aim is not only automation but also a better customer experience by providing a User Interface which is easily comprehendible by any person. The website should also provide customer support so that the users get responded to their queries immediately and maintain the transparency so that the users should be aware of all the charges associated with the transaction. 
+ 
+ 
+Mandatory Modules: 
+ 
+1.	Create Account: This module will take the details of a person who wants to be the customer of the bank. On successfully entering the details, a service reference number will be generated to track the status. Admin will verify all related documents at backend and approve account creation, upon which customer id, account number and an initial password will be generated and sent to the customer on email.  
+2.	Login: In order to avail any banking service, customer need to be authenticated with valid credentials. 
+ 
+3.	Transaction (Credit/Debit/Fund Transfer):  User should be able to perform transaction such as transferring and receiving fund from other account registered with the bank.  
+ 
+4.	Change login password and transaction passwords: An authenticated customer should be provided with the facility to change their passwords as and when required. 
+ 
+5.	Forgot ID/Password: In case, if user has forgotten the login ID/password, he should be able to reset the same. For this, user must enter the account number and the OTP obtained on the registered mobile number. The user will get the user id-/password on email if the OTP is correct. 
+ 
+ 
+➢ Admin Module:  
+1.	Login  
+2.	Approve Account Creation 
+ 
+➢ User Module:  
+1.	Login  
+2.	Register  
+3.	Fund Transfer 
+4.	Password change 
+5.	Account unlocking 
+6.	Forgot customer id/password 
+ 
+ 
+ 
+Online Banking System 
+Project abstract: 
+Online banking system is a web application which provides a user-friendly user interface and an easy efficient way to perform banking operations such as account creation, fund transfer, password reset. 
+A customer has access to update their details, transfer fund to other accounts, resetting passwords etc. 
+ 
+Implementation: 
+ 
+➢	Admin Module:  
+1.	Login  
+2.	Approve Account Creation 
+ 
+➢	User Module:  
+1.	Login  
+2.	Register  
+3.	Fund Transfer 
+4.	Password change 
+5.	Account unlocking 
+6.	Forgot customer id/password 
+ 
+Project Flow: 
+ 
+A visitor at first will request for account creation in the bank website by providing required details. On submitting their details, user will receive a service reference number to track the status of account creation status. All new account creation request will be approved by Admin after verifying all the related documents. Customer’s account will be created on approval and a unique customer id, account number and initial login and transaction password will be delivered to the customer on registered email and the same will be information via SMS on phone. On successful creation of account, customer now will be able to avail all the services on online banking system. 
+ 
+Validation Parameters: 
+During registration user will be required to enter password in a specified format like it should be more than 8 characters and in alphanumeric format and should contain one uppercase letter and one special character. This makes the password strong and difficult to crack.  
+User is required to enter or select every field during registration process. During login the credentials are checked to make sure that the user trying to login is authorized user and will be allowed to avail the services. 
+ 
+ 
+Description of Modules: 
+	I. 	USER MODULE: 
+ 
+➢	Home page 
+The home page includes login button which redirects the user to the login page, register button enables the user to register themselves with internet banking provided they have already opened the account. Open a new account button directs user to page where the user can complete the form and submit the account opening request. 
+ 
+ 
+ 
+➢	Login page 
+Login page will have login form where the user will be redirected to the dashboard after authentication. The account will be locked after 3 unsuccessful login attempts. The user will have to regenerate password to login. Login page will also have forgot User  
+ID and Forgot Password buttons so that they can be redirected to respective pages. User who have availed the internet banking facility after the account opening process can generate a user id and password for internet banking by clicking on Register button. 
+➢	Open an account page 
+User will have to complete the form and submit the request. The documents get verified by a customer representative and then the admin approves the request and creates the account. 
+➢	Register for internet banking page 
+The user must enter account number, login password with confirm password field, transaction password with confirm transaction password field. The user will be registered for internet banking and redirected to the login page. 
+➢	Forgot User ID page 
+User must enter the account number and the OTP obtained on the registered mobile number. The user will get the user id on email if the OTP is correct. 
+➢	Forgot Password page 
+User must enter the user id and the OTP obtained on the registered mobile number. The user will get be redirected to Set New Password page. 
+➢	Account locked page 
+The user will be shown a message that says maximum login attempts reached. Click here to generate password. The user will be redirected to the forgot password page.  
+➢	Set New Password 
+The user can set new password with confirm password field. The user password will be changed, and user will be redirected to the login page. 
+ 
+ 
+ 
+ 
+6. Dashboard 
+This module will have following pages: 
+➢	Dashboard page 
+➢	Account Statement 
+➢	Account Summary 
+➢	Change Password 
+➢	Session Expired 
+ 
+After successfully logging in, the user will be redirected to the Dashboard where he/she will be able to view his entire account status on a single page. 
+The Dashboard module will consist of various pages such as Account Details, Account Summary, Change User Id/Password and User 
+Profile. 
+ 
+Account Details(User Profile):This page will consist of all the details which the user had entered during the time of registration. It will include fields such as Name, Mobile Number, Email ID, Aadhar Card Number, Date of Birth. It will also contain The Residential Address and Permanent address fields. Including Occupational Details entered by the user. This is particularly useful in case the user wants to change or update any of his credentials.  
+ 
+➢	Account Summary page: This page will contain all the financial details of the user in a summarised form. The page will display the account number, balance and recent transactions 
+ 
+➢	AccountStatement page: The Account Statement Page will consist of a table that contains the columns like Account Number,Name,Account Type and Balance. To view the account statement during a specified time the user needs to select two dates and click on the submit button. The output will display a table with all the required information. 
+ 
+➢	Change Password Page: If the user wishes to change his password due to security reasons, he/she can click on the change password button. Upon clicking this button, the user will have to enter his new Login and Transaction password. 
+ 
+➢	Session Expired Page: In case the user presses the back button after logging out he/she will get a message indicating that the session has been expires. To access the account once again he needs to login. 
+ 
+7.	Fund Transfer 
+The following module has two buttons which redirects the user to respective page. 
+ 
+➢	Add Payee page 
+Payee page includes adding a new payee or beneficiary. The user must enter the beneficiary name, beneficiary’s account number and confirm the same. In order to save the beneficiary’s details the user must click on save beneficiary. The field for nickname is optional. 
+➢	Fund Transfer page 
+There are three modes for transferring the amount to the beneficiary’s account. They are – 1.Through NEFT  
+2.	Through RTGS 
+3.	Through IMPS 
+ 
+1.Through NEFT:  In order to initiate the payment through NEFT the user needs to fill their account number, the account number to which they want to transfer the amount and the amount they want to transfer. They can also add a new payee which will redirect them to add payee’s page. 
+ 
+2.Through RTGS:   In order to initiate the payment through RTGS the user needs to fill their account number, the account number to which they want to transfer the amount and the amount they want to transfer. They can also add a new payee which will redirect them to add payee’s page. 
+ 
+ 3. Through IMPS: In order to initiate the payment through IMPS the user needs to fill their account number, the account number to which they want to transfer the amount and the amount they want to transfer. They can also add a new payee which will redirect them to add payee’s page. 
+ 
+8.	Admin 
+➢ Home page 
+The Admin page is intended for use by authorised bank personnel only. The Admin page will consist of initiating the account opening request. Once a new user clicks on the register button the request will be sent to the admin for approval. If the admin approves the request, the account corresponding to the request will be made active. If the admin disapproves the request the user will have to renter his information once again to successfully complete the account. 
+ 
+User Module:  2
+Home    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Login 
+ 
+  
+ 
+c)Register for Internet Banking
+   
+Open an Account
+ 
+ 
+ 
+ 
+ 
+ Forgot User ID 
+  
+Forgot Password 
+  
+ Set new password 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Dashboard 
+  
+ 
+b)Account Statement
+  
+ 
+c)Change Password 
+  
+Session Expired 
+  
+ 
+Fund Transfer 
+a)	Add Payee
+  
+b)	IMPS Transaction/ Neft Transaction/ RTGS Transaction
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Agile Methodology: 
+ 
+Abstract: 
+Agile development is a group of software development methodology based on iterative and incremental development, in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. 
+ 
+Steps to follow in Agile methodology: 
+II.	You need to identify various user stories and its modules/tasks which needs to be implemented in the project as a part of Sprint planning.  
+III.	Divide all the user stories in two Sprints. Duration of each Sprint will be 3 days.  
+IV.	Any backlogs of Sprint 1 should be included in Sprint 2 along with stories of Sprint 2. 
+V.	You need to prepare Scrum boards for each sprint. You can include both sprints in one scrum board if there is enough space for the same. 
+ 
+Instructions for writing scrum board: 
+•	Chart papers, sketch pens, measurement scale and sticky notes will be provided for scrum board preparation. 
+•	You need to decorate your scrum board well and it should be clean, visible and selfexplanatory. 
+•	Discover a unique name for your project.  
+•	Mention Group Number, TL and group member’s name in the scrum board. 
+ 
+ 
+ 
+Format for Scrum Board: 
+ 
+ 	  Your Project Name 
+Team Leader: <Name> 
+ 
+Group Members:                                                                                   Logo, if any 1. 
+2. 
+3.  
+User Story 	TO DO 	In Progress 	Impediments 	To Verify 	Done 
+ 	 	 	 	 	 
+ 
+ 
+ 
